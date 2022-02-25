@@ -7,6 +7,6 @@ COPY . /app/
 
 RUN /app/odbcinstall.sh
 
-RUN pip install pyodbc
+RUN pip install -r requirements.txt
 
 ENTRYPOINT [ "python", "test.py" ]
